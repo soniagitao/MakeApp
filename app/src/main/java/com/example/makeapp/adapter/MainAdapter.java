@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.makeapp.MainActivity;
 import com.example.makeapp.R;
 import com.example.makeapp.models.MakeupLogo;
@@ -37,7 +38,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull MainAdapter.ViewHolder holder, int position) {
         MakeupLogo item = items.get(position);
         holder.nameText.setText(item.getName());
-        //blm ada glide nya
+        Glide.with(context).load(item.getLogo()).into(holder.logoImage);
     }
 
     @Override

@@ -1,24 +1,24 @@
 package com.example.makeapp.models;
 
 public class MakeupLogo {
-    private String logo;
+    private int logo;
     private String name;
     private String title;
 
-    public MakeupLogo(String logo, String name) {
+    public MakeupLogo(int logo, String name) {
         this.logo = logo;
         this.name = name;
-        this.name = title;
     }
 
-    public MakeupLogo(String s, String s1, String rbc_news) {
+    public MakeupLogo(int s, String s1, String rbc_news) {
     }
 
-    public String getLogo() {
+    public int getLogo() {
+
         return logo;
     }
 
-    public void setLogo(String logo) {
+    public void setLogo(int logo) {
 
         this.logo = logo;
     }
@@ -33,13 +33,4 @@ public class MakeupLogo {
         this.name = name;
     }
 
-    public void setTitle(String title) {
-
-        this.title = title;
-    }
-
-    public String getTittle() {
-
-        return title;
-    }
 }

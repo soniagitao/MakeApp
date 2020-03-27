@@ -19,11 +19,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView teamsView = findViewById(R.id.rv_teams);
+        RecyclerView teamsView = findViewById(R.id.rv_makeup);
 
         List<MakeupLogo> teams = new ArrayList<>();
-        teams.add(new MakeupLogo("https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/360px-Liverpool_FC.svg.png", "Liverpool"));
-        teams.add(new MakeupLogo("https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/360px-Manchester_City_FC_badge.svg.png", "Man. City"));
+        teams.add(new MakeupLogo(R.drawable.maskara, "Mascara"));
+        teams.add(new MakeupLogo(R.drawable.eyeshadow, "Eye Shadow"));
+        teams.add(new MakeupLogo(R.drawable.blush, "Blush On"));
+        teams.add(new MakeupLogo(R.drawable.foundation, "Foundation"));
+        teams.add(new MakeupLogo(R.drawable.lipstick, "Lipstick"));
 
         MainAdapter adapter = new MainAdapter(this, teams);
         teamsView.setAdapter(adapter);
