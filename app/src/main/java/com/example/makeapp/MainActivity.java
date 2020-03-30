@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView teamsView = findViewById(R.id.rv_makeup);
 
         List<MakeupLogo> teams = new ArrayList<>();
-        teams.add(new MakeupLogo(R.drawable.maskara, "Mascara"));
-        teams.add(new MakeupLogo(R.drawable.eyeshadow, "Eye Shadow"));
-        teams.add(new MakeupLogo(R.drawable.blush, "Blush On"));
-        teams.add(new MakeupLogo(R.drawable.foundation, "Foundation"));
-        teams.add(new MakeupLogo(R.drawable.lipstick, "Lipstick"));
+        teams.add(new MakeupLogo(R.drawable.maskara, "Mascara", 1));
+        teams.add(new MakeupLogo(R.drawable.eyeshadow, "Eye Shadow", 2));
+        teams.add(new MakeupLogo(R.drawable.blush, "Blush On", 3));
+        teams.add(new MakeupLogo(R.drawable.foundation, "Foundation", 4));
+        teams.add(new MakeupLogo(R.drawable.lipstick, "Lipstick", 5));
 
         MainAdapter adapter = new MainAdapter(this, teams);
         teamsView.setAdapter(adapter);

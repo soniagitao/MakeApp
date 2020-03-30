@@ -16,7 +16,7 @@ public class MascaraActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product);
+        setContentView(R.layout.activity_mascara);
 
         RecyclerView teamsView = findViewById(R.id.rv_makeup);
 
