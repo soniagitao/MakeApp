@@ -12,15 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.makeapp.R;
-import com.example.makeapp.models.MakeupLogo;
+import com.example.makeapp.models.Product;
 
 import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
     private Context context;
-    private List<MakeupLogo> items;
+    private List<Product> items;
 
-    public ProductAdapter(Context context, List<MakeupLogo> items) {
+    public ProductAdapter(Context context, List<Product> items) {
         this.context = context;
         this.items = items;
     }
@@ -35,7 +35,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ProductAdapter.ViewHolder holder, int position) {
-        MakeupLogo item = items.get(position);
+        Product item = items.get(position);
         holder.nameText.setText(item.getName());
         Glide.with(context).load(item.getLogo()).into(holder.logoImage);
     }

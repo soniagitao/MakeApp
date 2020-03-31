@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MascaraActivity"></activity>
+        <activity android:name=".LipstickActivity"></activity>
+        <activity android:name=".FoundationActivity" />
+        <activity android:name=".BlushActivity" />
+        <activity android:name=".EyeshadowActivity" />
+        <activity android:name=".MascaraActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
