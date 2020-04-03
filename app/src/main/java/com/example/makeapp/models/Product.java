@@ -3,11 +3,12 @@ package com.example.makeapp.models;
 public class Product {
     private int logo;
     private String name;
-
+    private int RowID;
 
     public Product(int logo , String name, int rowID) {
         this.logo = logo;
         this.name = name;
+        this.RowID = rowID;
     }
 
     public Product(int s, String makeup) {
@@ -31,4 +32,11 @@ public class Product {
         this.name = name;
     }
 
+    public int getRowID() {
+        return RowID;
+    }
+
+    public void setRowID(int rowID) {
+        RowID = rowID;
+    }
 }

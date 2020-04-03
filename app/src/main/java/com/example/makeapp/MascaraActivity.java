@@ -21,16 +21,16 @@ public class MascaraActivity extends AppCompatActivity {
         RecyclerView teamsView = findViewById(R.id.rv_makeup);
 
         List<Product> teams = new ArrayList<>();
-        teams.add(new Product(R.drawable.mascara_bobi, "Bobbi Brown"));
-        teams.add(new Product(R.drawable.mascara_dior, "Dior"));
-        teams.add(new Product(R.drawable.mascara_loreal, "L'Oreal Paris Voluminous Lash Paradise"));
-        teams.add(new Product(R.drawable.mascara_makeover, "Make Over"));
-        teams.add(new Product(R.drawable.mascara_maybelline, "Maybelline volum' express hypercurl"));
-        teams.add(new Product(R.drawable.mascara_mizzu, "Mizzu True Dimensional Lash"));
-        teams.add(new Product(R.drawable.mascara_push, "Maybelline The Falsies Push Up Drama"));
-        teams.add(new Product(R.drawable.mascara_sensa, "Maybelline Lash Sensational"));
-        teams.add(new Product(R.drawable.mascara_silky, "SilkyGirl Big Eye Collagen Waterproof"));
-        teams.add(new Product(R.drawable.mascara_too, "Too Faced Better Than Sex Mascara"));
+        teams.add(new Product(R.drawable.mascara_bobi, "Bobbi Brown", 1));
+        teams.add(new Product(R.drawable.mascara_dior, "Dior", 2));
+        teams.add(new Product(R.drawable.mascara_loreal, "L'Oreal Paris Voluminous Lash Paradise", 3));
+        teams.add(new Product(R.drawable.mascara_makeover, "Make Over", 4));
+        teams.add(new Product(R.drawable.mascara_maybelline, "Maybelline volum' express hypercurl",5 ));
+        teams.add(new Product(R.drawable.mascara_mizzu, "Mizzu True Dimensional Lash", 6));
+        teams.add(new Product(R.drawable.mascara_push, "Maybelline The Falsies Push Up Drama", 7));
+        teams.add(new Product(R.drawable.mascara_sensa, "Maybelline Lash Sensational", 8));
+        teams.add(new Product(R.drawable.mascara_silky, "SilkyGirl Big Eye Collagen Waterproof", 9));
+        teams.add(new Product(R.drawable.mascara_too, "Too Faced Better Than Sex Mascara", 10));
         ProductAdapter adapter = new ProductAdapter(this, teams);
         teamsView.setAdapter(adapter);
 
